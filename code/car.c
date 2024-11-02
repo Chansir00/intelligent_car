@@ -13,12 +13,13 @@ void Car_Init(void)
     mt9v03x_init();
     Uart_init();
     key_init(10);
-    uart_write_string(UART_INDEX, "init_ready");
+    uart_write_byte (UART_INDEX, 0x01);
 }
 void kernel(void)
 {
 
     tft180_displayimage03x((const uint8_t *)Image_use_out[0], MT9V03X_W, MT9V03X_H);
+    Find_Mid_Line_Draw_Line();
     switch (car_dir)
     {
     case 0:
@@ -46,41 +47,41 @@ void kernel(void)
 
 void Car_streight(void)
 {
-    uart_write_string(UART_INDEX, "gp");
-    Set_Left_Motor_Duty(90);
-    Set_Right_Motor_Duty(90);
+    uart_write_byte (UART_INDEX, 0x03);
+    Set_Left_Motor_Duty(9000);
+    Set_Right_Motor_Duty(9000);
 }
 
 void Car_left(void)
 {
-    Set_Left_Motor_Duty(60);
-    Set_Right_Motor_Duty(90);
+    Set_Left_Motor_Duty(6000);
+    Set_Right_Motor_Duty(9000);
 }
 
 void Car_right(void)
 {
-    Set_Left_Motor_Duty(90);
-    Set_Right_Motor_Duty(60);
+    Set_Left_Motor_Duty(9000);
+    Set_Right_Motor_Duty(6000);
 }
 
 
 void Car_left_circle(void)
 {
-    Set_Left_Motor_Duty(60);
-    Set_Right_Motor_Duty(90);
+    Set_Left_Motor_Duty(6000);
+    Set_Right_Motor_Duty(9000);
 }
 
 
 void Car_right_circle(void)
 {
-    Set_Left_Motor_Duty(90);
-    Set_Right_Motor_Duty(60);
+    Set_Left_Motor_Duty(9000);
+    Set_Right_Motor_Duty(6000);
 }
 
 
 void Car_stop(void)
 {
-    uart_write_string(UART_INDEX, "stop");
+    uart_write_byte (UART_INDEX, 0x02);
     Set_Left_Motor_Duty(0);
     Set_Right_Motor_Duty(0);
 }

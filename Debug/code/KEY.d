@@ -322,3 +322,5 @@ code/KEY.o :	x:/TC264_source/camera_car/code/uart.h
 x:/TC264_source/camera_car/code/uart.h :
 code/KEY.o :	x:/TC264_source/camera_car/code/key.h
 x:/TC264_source/camera_car/code/key.h :
+code/KEY.o :	x:/TC264_source/camera_car/code/tft.h
+x:/TC264_source/camera_car/code/tft.h :

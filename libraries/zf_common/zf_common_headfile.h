@@ -112,6 +112,7 @@
 #include "motor.h"
 #include "uart.h"
 #include "key.h"
+#include "tft.h"
 
 
 #endif

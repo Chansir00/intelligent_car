@@ -3,14 +3,32 @@
 
 #include <stdint.h>
 
+struct LEFT_EDGE {
+    int16_t row;  // 琛屽潗鏍�
+    int16_t col;  // 鍒楀潗鏍�
+    uint8_t flag; // 瀛樺湪杈圭晫鐨勬爣蹇�
+};
+
+struct RIGHT_EDGE {
+    int16_t row;  // 琛屽潗鏍�
+    int16_t col;  // 鍒楀潗鏍�
+    uint8_t flag; // 瀛樺湪杈圭晫鐨勬爣蹇�
+};
+struct CENTRE {
+    int16_t row;  // 琛屽潗鏍�
+    int16_t col;  // 鍒楀潗鏍�
+    uint8_t flag; // 瀛樺湪杈圭晫鐨勬爣蹇�
+};
+
 // 鍥惧儚灏哄
-#define IMAGE_H    160 // 鍥惧儚楂樺害
-#define IMAGE_W    128 // 鍥惧儚瀹藉害
+#define IMAGE_H    120 // 鍥惧儚楂樺害
+#define IMAGE_W    160 // 鍥惧儚瀹藉害
 #define GrayScale 256
 
 // 鍏ㄥ眬鍙橀噺澹版槑
 extern struct LEFT_EDGE L_edge[140];
 extern struct RIGHT_EDGE R_edge[140];
+extern struct CENTRE Centre[140];
 extern uint8_t L_edge_count, R_edge_count;
 extern uint8_t dire_left, dire_right;
 extern uint8_t L_search_amount, R_search_amount;
@@ -114,19 +132,16 @@ float Get_angle(float Ax, float Ay, float Bx, float By, float Cx, float Cy);
 float limit(float x, uint32_t y);
 
 // 缁撴瀯浣撳０鏄�
-struct LEFT_EDGE {
-    int16_t row;  // 琛屽潗鏍�
-    int16_t col;  // 鍒楀潗鏍�
-    uint8_t flag; // 瀛樺湪杈圭晫鐨勬爣蹇�
-};
 
-struct RIGHT_EDGE {
-    int16_t row;  // 琛屽潗鏍�
-    int16_t col;  // 鍒楀潗鏍�
-    uint8_t flag; // 瀛樺湪杈圭晫鐨勬爣蹇�
-};
 
 uint8_t Deal_img(void);
+
+
 int calculate_offset(void);
+
+
 void adjust_motor_speed();
+
+void update_mid_line_array(void);
+
 #endif // CAMERA1_H

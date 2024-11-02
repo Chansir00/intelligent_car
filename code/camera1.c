@@ -553,25 +553,7 @@ uint8_t Deal_img(void) {
     search_neighborhood();                             // 查找边界
     clear_find_point();                                // 清除边界点
     get_turning_point();                               // 获取拐点
-
-    // 计算角度并限幅
-    float angle = Get_angle(L_corner_row, L_corner_col, R_corner_row, R_corner_col, IMAGE_H, IMAGE_W);
-    float limited_angle = limit(angle, 30);
-    
-    return limited_angle;
 }
-
-void adjust_motor_speed() {
-    float angle = Deal_img(); // 获取偏移角度
-    
-    // 基础速度和调整比例
-    int base_speed = 3000;
-    int adjust_value = angle * 50; // 根据角度调整
-    
-    Set_Left_Motor_Duty(limit(base_speed + adjust_value, MOTOR_A_DUTY));
-    Set_Right_Motor_Duty(limit(base_speed - adjust_value, MOTOR_B_DUTY));
-}
-
 
 
 
@@ -583,4 +565,15 @@ int calculate_offset(void) {
     int track_center = (left_col + right_col) / 2;
     int image_center = IMAGE_W / 2;
     return track_center - image_center; // 偏移量
+}
+
+void update_mid_line_array(void)
+{
+    {
+        for (uint16_t i = 0; i < MT9V03X_H; i++)
+        {
+            // 确保 L_edge[i].col 和 R_edge[i].col 是有效的边界值
+            Centre[i] = (L_edge[i].col + R_edge[i].col) / 2;
+        }
+    }
 }

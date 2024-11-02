@@ -11,9 +11,9 @@
 // 电机频率
 #define MOTOR_FREQ          13333
 // 电机限幅
-#define MOTOR_A_DUTY        4000
+#define MOTOR_A_DUTY        10000
 // 电机限幅
-#define MOTOR_B_DUTY        4000
+#define MOTOR_B_DUTY        10000
 
 void Init_Motor(void);
 
@@ -21,9 +21,9 @@ void Set_Left_Motor_Duty(int duty);
 
 void Set_Right_Motor_Duty(int duty);
 
-int Pid_Left_Motor(int hope_speed, int rear_speed);
-
-int Pid_Right_Motor(int hope_speed, int rear_speed);
+void adjust_motor_speed();
+int calculate_inner_pid(int desired_speed, int left_speed, int right_speed);
+int calculate_outer_pid(float desired_position, float current_position);
 
 
 #endif

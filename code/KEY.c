@@ -14,6 +14,7 @@ void handle_key_1_short_press(void) {
 
 void handle_key_2_short_press(void) {
      uart_write_string(UART_INDEX, "Test");
+     car_dir = 0;
 }
 
 
