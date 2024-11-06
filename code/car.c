@@ -1,11 +1,16 @@
 #include "zf_common_headfile.h"
 
-
+uint8_t flag1=0;
+uint8_t flag2=0;
+uint8_t flag3=0;
 
 
 extern car_direction car_dir = STOP;
 void Car_Init(void)
 {
+    if(flag1 ==0)
+        uart_write_byte (UART_INDEX, 0x01);
+        flag1 = 1;
     Encoder_init();
     Init_Motor();
     tft180_set_dir(TFT180_CROSSWISE);
@@ -13,13 +18,13 @@ void Car_Init(void)
     mt9v03x_init();
     Uart_init();
     key_init(10);
-    uart_write_byte (UART_INDEX, 0x01);
+
+
 }
 void kernel(void)
 {
-
+    //tftsplayimage032_zoom(bin_image[0], image_w, image_h, image_w, image_h,0,0);
     tft180_displayimage03x((const uint8_t *)Image_use_out[0], MT9V03X_W, MT9V03X_H);
-    Find_Mid_Line_Draw_Line();
     switch (car_dir)
     {
     case 0:
@@ -47,9 +52,12 @@ void kernel(void)
 
 void Car_streight(void)
 {
-    uart_write_byte (UART_INDEX, 0x03);
-    Set_Left_Motor_Duty(9000);
-    Set_Right_Motor_Duty(9000);
+    if(flag3 ==0)
+        uart_write_byte (UART_INDEX, 0x03);
+        flag3 = 1;
+    adjust_motor_speed();
+//    Set_Left_Motor_Duty(9000);
+//    Set_Right_Motor_Duty(9000);
 }
 
 void Car_left(void)
@@ -81,7 +89,9 @@ void Car_right_circle(void)
 
 void Car_stop(void)
 {
-    uart_write_byte (UART_INDEX, 0x02);
+    if(flag1 ==0)
+        uart_write_byte (UART_INDEX, 0x01);
+        flag1 = 1;
     Set_Left_Motor_Duty(0);
     Set_Right_Motor_Duty(0);
 }

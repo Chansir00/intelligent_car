@@ -1,3 +1,10 @@
+/*
+ * camera1.h
+ *
+ *  Created on: 2024年11月6日
+ *      Author: 64271
+ */
+
 #ifndef CAMERA1_H
 #define CAMERA1_H
 
@@ -48,7 +55,7 @@ extern uint8_t Image_use_out[IMAGE_H][IMAGE_W];
  * @since v1.1
  * @note Example: uint8_t OTSU_Threshold = otsuThreshold(mt9v03x_image_dvp[0]);
  */
-uint8_t otsuThreshold(uint8_t *image);
+uint8_t otsuThreshold1(uint8_t *image);
 
 /**
  * @brief 鍥惧儚鍘嬬缉
@@ -76,7 +83,7 @@ void sobel(uint8_t imageIn[IMAGE_H][IMAGE_W], uint8_t imageOut[IMAGE_H][IMAGE_W]
  * @since v1.0
  * @note Example: image_draw_rectan(Image_use);
  */
-void image_draw_rectan(uint8_t image[IMAGE_H][IMAGE_W]);
+void image_draw_rectan1(uint8_t image[IMAGE_H][IMAGE_W]);
 
 /**
  * @brief 鍏偦鍩熸壘杈圭晫

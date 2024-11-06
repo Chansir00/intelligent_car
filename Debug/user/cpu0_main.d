@@ -324,3 +324,5 @@ user/cpu0_main.o :	x:/TC264_source/camera_car/code/key.h
 x:/TC264_source/camera_car/code/key.h :
 user/cpu0_main.o :	x:/TC264_source/camera_car/code/tft.h
 x:/TC264_source/camera_car/code/tft.h :
+user/cpu0_main.o :	x:/TC264_source/camera_car/code/image.h
+x:/TC264_source/camera_car/code/image.h :

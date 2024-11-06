@@ -1,6 +1,7 @@
 #include "zf_common_headfile.h"
 extern uint8_t Car_State = 0;          // 杞︾姸鎬�,0:鍋滆溅,1:姝ｅ父
 extern car_dir;
+uint8_t debug = 0;
 // 示例的按键处理函数
 
 
@@ -8,12 +9,19 @@ void handle_key_1_short_press(void) {
     uart_write_string(UART_INDEX, "Start");
     Car_State = 1; //发车
     car_dir = 1;
-    uart_write_string(UART_INDEX, "ready");
 }
 
 
 void handle_key_2_short_press(void) {
      uart_write_string(UART_INDEX, "Test");
+     car_dir = 0;
+     debug = 1;
+
+
+}
+
+void handle_key_3_short_press(void) {
+     uart_write_string(UART_INDEX, "stop");
      car_dir = 0;
 }
 
@@ -37,6 +45,9 @@ void process_key_actions(void)
                         break;
                     case KEY_2:
                         handle_key_2_short_press();
+                        break;
+                    case KEY_3:
+                        handle_key_3_short_press();
                         break;
                     // 根据需要添加更多按键的处理
                     default:

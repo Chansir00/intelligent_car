@@ -113,6 +113,7 @@
 #include "uart.h"
 #include "key.h"
 #include "tft.h"
+#include "image.h"
 
 
 #endif

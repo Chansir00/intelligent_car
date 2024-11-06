@@ -8,6 +8,7 @@ C_SRCS += \
 ../code/camera1.c \
 ../code/car.c \
 ../code/encoder.c \
+../code/image.c \
 ../code/motor.c \
 ../code/tft.c \
 ../code/uart.c 
@@ -17,6 +18,7 @@ COMPILED_SRCS += \
 ./code/camera1.src \
 ./code/car.src \
 ./code/encoder.src \
+./code/image.src \
 ./code/motor.src \
 ./code/tft.src \
 ./code/uart.src 
@@ -26,6 +28,7 @@ C_DEPS += \
 ./code/camera1.d \
 ./code/car.d \
 ./code/encoder.d \
+./code/image.d \
 ./code/motor.d \
 ./code/tft.d \
 ./code/uart.d 
@@ -35,6 +38,7 @@ OBJS += \
 ./code/camera1.o \
 ./code/car.o \
 ./code/encoder.o \
+./code/image.o \
 ./code/motor.o \
 ./code/tft.o \
 ./code/uart.o 
@@ -60,7 +64,7 @@ code/%.o: ./code/%.src code/subdir.mk
 clean: clean-code
 
 clean-code:
-	-$(RM) ./code/KEY.d ./code/KEY.o ./code/KEY.src ./code/camera1.d ./code/camera1.o ./code/camera1.src ./code/car.d ./code/car.o ./code/car.src ./code/encoder.d ./code/encoder.o ./code/encoder.src ./code/motor.d ./code/motor.o ./code/motor.src ./code/tft.d ./code/tft.o ./code/tft.src ./code/uart.d ./code/uart.o ./code/uart.src
+	-$(RM) ./code/KEY.d ./code/KEY.o ./code/KEY.src ./code/camera1.d ./code/camera1.o ./code/camera1.src ./code/car.d ./code/car.o ./code/car.src ./code/encoder.d ./code/encoder.o ./code/encoder.src ./code/image.d ./code/image.o ./code/image.src ./code/motor.d ./code/motor.o ./code/motor.src ./code/tft.d ./code/tft.o ./code/tft.src ./code/uart.d ./code/uart.o ./code/uart.src
 
 .PHONY: clean-code
 

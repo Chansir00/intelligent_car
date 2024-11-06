@@ -11,12 +11,14 @@
 //绘制边线函数（画线即画很多个点）
 void Find_Mid_Line_Draw_Line(void)
 {
+    uart_write_byte (UART_INDEX,L_edge[60].col);
+    uart_write_byte (UART_INDEX,R_edge[60].col);
     for(uint16_t i = MT9V03X_H - 1; i > 0;i--)
     {
         //全画
-        draw_points(L_edge[i].col,L_edge[i].row,RGB565_RED);
-        draw_points(R_edge[i].col,L_edge[i].row,RGB565_RED);
-        draw_points(Centre[i],i,RED);
+        draw_points(L_edge[i].col,L_edge[i].row,RGB565_BLACK );
+        draw_points(R_edge[i].col,L_edge[i].row,RGB565_BLACK );
+        draw_points(Centre[i].col,Centre[i].row,RGB565_BLACK );
     }
 }
 

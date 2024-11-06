@@ -1,3 +1,11 @@
+/*
+ * camera1.c
+ *
+ *  Created on: 2024年11月6日
+ *      Author: 64271
+ */
+
+
 #include "zf_common_headfile.h"
 
 
@@ -33,7 +41,7 @@ uint16_t R_start_y = 0; // 初始化右边界起始点y坐标
 //  @since      v1.1
 //  Sample usage:   OTSU_Threshold = otsuThreshold(mt9v03x_image_dvp[0]);//大津法阈值
 //-------------------------------------------------------------------------------------------------------------------
-uint8_t otsuThreshold(uint8_t *image)   //注意计算阈值的一定要是原图像
+uint8_t otsuThreshold1(uint8_t *image)   //注意计算阈值的一定要是原图像
 {
 
     int Pixel_Max=0;
@@ -183,7 +191,7 @@ void sobel (uint8_t imageIn[IMAGE_H][IMAGE_W], uint8_t imageOut[IMAGE_H][IMAGE_W
 //  @since      v1.0
 //  Sample usage:   image_draw_rectan(Image_use_zip);
 //-------------------------------------------------------------------------------------------------------------------
-void image_draw_rectan(uint8_t image[IMAGE_H][IMAGE_W])
+void image_draw_rectan1(uint8_t image[IMAGE_H][IMAGE_W])
 {
     uint8_t i = 0;
     for (i = 0; i < IMAGE_H; i++)
@@ -312,7 +320,7 @@ void search_neighborhood(void)
                  dire_right = 0;
                  for(int i = 1;i<R_search_amount;i++)
                  {
-		////越界退出 行越界和列越界（向上向下向左向右）
+        ////越界退出 行越界和列越界（向上向下向左向右）
                      if(curr_row < Boundary_search_end || curr_row>IMAGE_H-1||curr_row+1<Boundary_search_end)  break;
                      //爬线过程
                      if(curr_col<IMAGE_W&&dire_right!=3&&Image_use_zip[curr_row-1][curr_col+1]==0&&Image_use_zip[curr_row-1][curr_col]==1)    //右上黑，3，左白
@@ -547,9 +555,9 @@ float Get_angle(float Ax, float Ay, float Bx, float By, float Cx, float Cy)
 
 uint8_t Deal_img(void) {
     //compressimage();                                   // 图像压缩
-    uint8_t threshold = otsuThreshold(mt9v03x_image[0]);  // 计算阈值
+    uint8_t threshold = otsuThreshold1(mt9v03x_image[0]);  // 计算阈值
     sobel(mt9v03x_image[0], Image_use_out[0], threshold); // 边缘检测
-    image_draw_rectan(Image_use_out[0]);               // 添加黑框
+    image_draw_rectan1(Image_use_out[0]);               // 添加黑框
     search_neighborhood();                             // 查找边界
     clear_find_point();                                // 清除边界点
     get_turning_point();                               // 获取拐点
@@ -573,7 +581,10 @@ void update_mid_line_array(void)
         for (uint16_t i = 0; i < MT9V03X_H; i++)
         {
             // 确保 L_edge[i].col 和 R_edge[i].col 是有效的边界值
-            Centre[i] = (L_edge[i].col + R_edge[i].col) / 2;
+            Centre[i].col = (L_edge[i].col + R_edge[i].col) / 2;
         }
     }
 }
+
+
+

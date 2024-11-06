@@ -117,28 +117,40 @@ int calculate_inner_pid(int desired_speed, int left_speed, int right_speed) {
     return (int)(inner_increment); // 返回增量
 }
 void adjust_motor_speed() {
-    float desired_angle = 0; // 目标角度（赛道中线）
-    // 计算角度并限幅
+    float desired_angle = 0; // 目标角度（保持车辆在赛道中间）
+
+    // 计算当前赛道的角度并限幅
     float current_angle = Get_angle(L_corner_row, L_corner_col, R_corner_row, R_corner_col, IMAGE_H, IMAGE_W);
     float limited_angle = limit(current_angle, 30);
 
-    // 计算期望速度增量
-    int speed_adjustment = calculate_outer_pid(desired_angle, limited_angle);
+    // 计算偏移量：赛道中线相对于摄像头中线的偏移
+    uint8_t offset = calculate_offset(); // 调用偏移量计算函数
+
+    // 使用偏移量和角度计算期望速度增量
+    uint16_t speed_adjustment = calculate_outer_pid(0, offset);
 
     // 获取当前左右轮速度
-    int left_speed = Get_Left_Motor_Speed(); //
-    int right_speed = Get_Right_Motor_Speed(); // 数
+    uint16_t left_speed = Get_Left_Motor_Speed();
+    uint16_t right_speed = Get_Right_Motor_Speed();
 
-    // 计算目标速度
-    int desired_speed = 3000 + speed_adjustment; // 基础速度加上调整值
+    // 计算基础速度并加上调整值
+    uint16_t base_speed = 4000; // 可以根据需要调整基础速度
+    uint16_t desired_speed_left = base_speed - speed_adjustment;
+    uint16_t desired_speed_right = base_speed + speed_adjustment;
 
-    // 计算电机控制增量
-    int motor_increment = calculate_inner_pid(desired_speed, left_speed, right_speed);
+    uint16_t motor_increment_left = calculate_inner_pid(desired_speed_left, left_speed, left_speed);
+    uint16_t motor_increment_right = calculate_inner_pid(desired_speed_right, right_speed, right_speed);
+    Set_Left_Motor_Duty(4000);
+    Set_Right_Motor_Duty(4000);
+    // 调整电机速度并设置限幅
+    Set_Left_Motor_Duty((int)(desired_speed_left + motor_increment_left));
+    Set_Right_Motor_Duty((int)(desired_speed_right + motor_increment_right));
 
-    // 设置电机速度，通过差速控制方向
-    Set_Left_Motor_Duty(limit(desired_speed - motor_increment, MOTOR_A_DUTY));
-    Set_Right_Motor_Duty(limit(desired_speed + motor_increment, MOTOR_B_DUTY));
+
+    // 发送调试信息
+    uart_write_byte(UART_INDEX, offset);
 }
+
 
 
 
