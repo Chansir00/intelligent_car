@@ -612,15 +612,15 @@ if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
 }
 //显示图像   改成你自己的就行 等后期足够自信了，显示关掉，显示屏挺占资源的
 tft180_displayimage03x((const uint8_t *)bin_image[0], MT9V03X_W, MT9V03X_H);
-//根据最终循环次数画出边界点
-for ( i = 0; i < data_stastics_l; i++)
-{
-    draw_points(points_l[i][0]+2, points_l[i][1], uesr_BLUE);//显示起点
-}
-for (i = 0; i < data_stastics_r; i++)
-{
-    draw_points(points_r[i][0]-2, points_r[i][1], uesr_RED);//显示起点
-}
+////根据最终循环次数画出边界点
+//for ( i = 0; i < data_stastics_l; i++)
+//{
+//    draw_points(points_l[i][0]+2, points_l[i][1], uesr_BLUE);//显示起点
+//}
+//for (i = 0; i < data_stastics_r; i++)
+//{
+//    draw_points(points_r[i][0]-2, points_r[i][1], uesr_RED);//显示起点
+//}
 
 for (i = hightest; i < image_h-1; i++)
 {

@@ -11,6 +11,7 @@
 
 struct LEFT_EDGE L_edge[140];
 struct RIGHT_EDGE R_edge[140];
+struct CENTRE Centre[140];
 uint8_t Image_use_zip[IMAGE_H][IMAGE_W];
 uint8_t Image_use_out[IMAGE_H][IMAGE_W];
 uint8_t L_edge_count=0, R_edge_count = 0;                     //左右边点的个数

@@ -23,8 +23,6 @@ void Car_Init(void)
 }
 void kernel(void)
 {
-    //tftsplayimage032_zoom(bin_image[0], image_w, image_h, image_w, image_h,0,0);
-    tft180_displayimage03x((const uint8_t *)Image_use_out[0], MT9V03X_W, MT9V03X_H);
     switch (car_dir)
     {
     case 0:
