@@ -144,10 +144,9 @@ float limit(float x, uint32_t y);
 uint8_t Deal_img(void);
 
 
-int calculate_offset(void);
+int calculate_offset1(void);
 
 
-void adjust_motor_speed();
 
 void update_mid_line_array(void);
 

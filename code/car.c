@@ -4,7 +4,7 @@ uint8_t flag1=0;
 uint8_t flag2=0;
 uint8_t flag3=0;
 
-
+extern int8_t offset;
 extern car_direction car_dir = STOP;
 void Car_Init(void)
 {
@@ -23,29 +23,30 @@ void Car_Init(void)
 }
 void kernel(void)
 {
-    switch (car_dir)
-    {
-    case 0:
-        Car_stop();
-        break;
-    case 1:
-        Car_streight();
-        break;
-    case 2:
-        Car_left();
-        break;
-    case 3:
-        Car_right();
-        break;
-    case 4:
-        Car_left_circle();
-        break;
-    case 5:
-        Car_right_circle();
-        break;
-    default:
-        break;
-    }
+     adjust_motor_speed(offset);
+//    switch (car_dir)
+//    {
+//    case 0:
+//        Car_stop();
+//        break;
+//    case 1:
+//        Car_streight();
+//        break;
+//    case 2:
+//        Car_left();
+//        break;
+//    case 3:
+//        Car_right();
+//        break;
+//    case 4:
+//        Car_left_circle();
+//        break;
+//    case 5:
+//        Car_right_circle();
+//        break;
+//    default:
+//        break;
+//    }
 }
 
 void Car_streight(void)
@@ -53,7 +54,7 @@ void Car_streight(void)
     if(flag3 ==0)
         uart_write_byte (UART_INDEX, 0x03);
         flag3 = 1;
-    adjust_motor_speed();
+    adjust_motor_speed(offset);
 //    Set_Left_Motor_Duty(9000);
 //    Set_Right_Motor_Duty(9000);
 }
