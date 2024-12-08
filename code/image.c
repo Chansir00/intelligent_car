@@ -53,7 +53,7 @@ int16 limit1(int16 x, int16 y)
 
 
 /*变量声明*/
-uint8 use_image[image_h][image_w] ;
+//uint8 mt9v03x_image[image_h][image_w] ;
 uint8 image_thereshold;//图像分割阈值
 //------------------------------------------------------------------------------------------------------------------
 //  @brief      获得一副灰度图像
@@ -67,7 +67,7 @@ void Get_image(uint8(*mt9v03x_image)[image_w])
     {
         for (j = 0; j <image_w; j += use_num)     //
         {
-            use_image[row][line] = mt9v03x_image[i][j];//这里的参数填写你的摄像头采集到的图像
+            mt9v03x_image[row][line] = mt9v03x_image[i][j];//这里的参数填写你的摄像头采集到的图像
             line++;
         }
         line = 0;
@@ -160,12 +160,12 @@ uint8 bin_image[image_h][image_w];//图像数组
 void turn_to_bin(void)
 {
   uint8 i,j;
- image_thereshold = otsuThreshold(use_image[0], image_w, image_h);
+ image_thereshold = otsuThreshold(mt9v03x_image[0], image_w, image_h);
   for(i = 0;i<image_h;i++)
   {
       for(j = 0;j<image_w;j++)
       {
-          if(use_image[i][j]>image_thereshold)bin_image[i][j] = white_pixel;
+          if(mt9v03x_image[i][j]>image_thereshold)bin_image[i][j] = white_pixel;
           else bin_image[i][j] = black_pixel;
       }
   }
@@ -225,9 +225,6 @@ uint8 get_start_point(uint8 start_row)
     }
 }
 
-#define USE_num 100  //定义找点的数组成员个数按理说300个点能放下，但是有些特殊情况确实难顶，多定义了一点
-#define WHITE 255
-#define BLACK 0
 /*
 函数名称：void search_l_r(uint16 break_flag, uint8(*image)[image_w],uint16 *l_stastic, uint16 *r_stastic,
                             uint8 l_start_x, uint8 l_start_y, uint8 r_start_x, uint8 r_start_y,uint8*hightest)
@@ -251,6 +248,7 @@ example：
     search_l_r((uint16)USE_num,image,&data_stastics_l, &data_stastics_r,start_point_l[0],
                 start_point_l[1], start_point_r[0], start_point_r[1],&hightest);
  */
+#define USE_num image_h*3   //定义找点的数组成员个数按理说300个点能放下，但是有些特殊情况确实难顶，多定义了一点
 
  //存放点的x，y坐标
 uint16 points_l[(uint16)USE_num][2] = { {  0 } };//左线
@@ -260,101 +258,183 @@ uint16 dir_l[(uint16)USE_num] = { 0 };//用来存储左边生长方向
 uint16 data_stastics_l = 0;//统计左边找到点的个数
 uint16 data_stastics_r = 0;//统计右边找到点的个数
 uint8 hightest = 0;//最高点
-void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, uint16 *r_stastic, uint8 l_start_x, uint8 l_start_y, uint8 r_start_x, uint8 r_start_y, uint8 *hightest)
+void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, uint16 *r_stastic, uint8 l_start_x, uint8 l_start_y, uint8 r_start_x, uint8 r_start_y, uint8*hightest)
 {
-    uint8 i, j, index_l, index_r;
-    uint16 l_data_statics, r_data_statics;
-    uint8 center_point_l[2], center_point_r[2];
-    uint8 search_filds_l[8][2], search_filds_r[8][2];
-    uint8 temp_l[8][2], temp_r[8][2];
-    static const int8 seeds_l[8][2] = { {0, 1}, {-1, 1}, {-1, 0}, {-1, -1}, {0, -1}, {1, -1}, {1, 0}, {1, 1} };
-    static const int8 seeds_r[8][2] = { {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1} };
 
-    // 初始化
-    l_data_statics = *l_stastic;
-    r_data_statics = *r_stastic;
-    center_point_l[0] = l_start_x; center_point_l[1] = l_start_y;
-    center_point_r[0] = r_start_x; center_point_r[1] = r_start_y;
+    uint8 i = 0, j = 0;
 
+    //左边变量
+    uint8 search_filds_l[8][2] = { {  0 } };
+    uint8 index_l = 0;
+    uint8 temp_l[8][2] = { {  0 } };
+    uint8 center_point_l[2] = {  0 };
+    uint16 l_data_statics;//统计左边
+    //定义八个邻域
+    static int8 seeds_l[8][2] = { {0,  1},{-1,1},{-1,0},{-1,-1},{0,-1},{1,-1},{1,  0},{1, 1}, };
+    //{-1,-1},{0,-1},{+1,-1},
+    //{-1, 0},       {+1, 0},
+    //{-1,+1},{0,+1},{+1,+1},
+    //这个是顺时针
+
+    //右边变量
+    uint8 search_filds_r[8][2] = { {  0 } };
+    uint8 center_point_r[2] = { 0 };//中心坐标点
+    uint8 index_r = 0;//索引下标
+    uint8 temp_r[8][2] = { {  0 } };
+    uint16 r_data_statics;//统计右边
+    //定义八个邻域
+    static int8 seeds_r[8][2] = { {0,  1},{1,1},{1,0}, {1,-1},{0,-1},{-1,-1}, {-1,  0},{-1, 1}, };
+    //{-1,-1},{0,-1},{+1,-1},
+    //{-1, 0},       {+1, 0},
+    //{-1,+1},{0,+1},{+1,+1},
+    //这个是逆时针
+
+    l_data_statics = *l_stastic;//统计找到了多少个点，方便后续把点全部画出来
+    r_data_statics = *r_stastic;//统计找到了多少个点，方便后续把点全部画出来
+
+    //第一次更新坐标点  将找到的起点值传进来
+    center_point_l[0] = l_start_x;//x
+    center_point_l[1] = l_start_y;//y
+    center_point_r[0] = r_start_x;//x
+    center_point_r[1] = r_start_y;//y
+
+        //开启邻域循环
     while (break_flag--)
     {
-        // 更新邻域坐标
-        for (i = 0; i < 8; i++) {
-            search_filds_l[i][0] = center_point_l[0] + seeds_l[i][0];
-            search_filds_l[i][1] = center_point_l[1] + seeds_l[i][1];
-            search_filds_r[i][0] = center_point_r[0] + seeds_r[i][0];
-            search_filds_r[i][1] = center_point_r[1] + seeds_r[i][1];
+
+        //左边
+        for (i = 0; i < 8; i++)//传递8F坐标
+        {
+            search_filds_l[i][0] = center_point_l[0] + seeds_l[i][0];//x
+            search_filds_l[i][1] = center_point_l[1] + seeds_l[i][1];//y
+        }
+        //中心坐标点填充到已经找到的点内
+        points_l[l_data_statics][0] = center_point_l[0];//x
+        points_l[l_data_statics][1] = center_point_l[1];//y
+        l_data_statics++;//索引加一
+
+        //右边
+        for (i = 0; i < 8; i++)//传递8F坐标
+        {
+            search_filds_r[i][0] = center_point_r[0] + seeds_r[i][0];//x
+            search_filds_r[i][1] = center_point_r[1] + seeds_r[i][1];//y
+        }
+        //中心坐标点填充到已经找到的点内
+        points_r[r_data_statics][0] = center_point_r[0];//x
+        points_r[r_data_statics][1] = center_point_r[1];//y
+
+        index_l = 0;//先清零，后使用
+        for (i = 0; i < 8; i++)
+        {
+            temp_l[i][0] = 0;//先清零，后使用
+            temp_l[i][1] = 0;//先清零，后使用
         }
 
-        // 记录当前点
-        points_l[l_data_statics][0] = center_point_l[0];
-        points_l[l_data_statics][1] = center_point_l[1];
-        points_r[r_data_statics][0] = center_point_r[0];
-        points_r[r_data_statics][1] = center_point_r[1];
-
-        index_l = index_r = 0;
-
-        // 左边判断
-        for (i = 0; i < 8; i++) {
-            if (image[search_filds_l[i][1]][search_filds_l[i][0]] == 0 &&
-                image[search_filds_l[(i + 1) & 7][1]][search_filds_l[(i + 1) & 7][0]] == 255) {
-                temp_l[index_l][0] = search_filds_l[i][0];
-                temp_l[index_l][1] = search_filds_l[i][1];
+        //左边判断
+        for (i = 0; i < 8; i++)
+        {
+            if (image[search_filds_l[i][1]][search_filds_l[i][0]] == 0
+                && image[search_filds_l[(i + 1) & 7][1]][search_filds_l[(i + 1) & 7][0]] == 255)
+            {
+                temp_l[index_l][0] = search_filds_l[(i)][0];
+                temp_l[index_l][1] = search_filds_l[(i)][1];
                 index_l++;
-                dir_l[l_data_statics] = i; // 记录方向
+                dir_l[l_data_statics - 1] = (i);//记录生长方向
             }
-        }
 
-        // 更新左边中心点
-        if (index_l) {
-            center_point_l[0] = temp_l[0][0];
-            center_point_l[1] = temp_l[0][1];
-            for (j = 1; j < index_l; j++) {
-                if (temp_l[j][1] < center_point_l[1]) {
-                    center_point_l[0] = temp_l[j][0];
-                    center_point_l[1] = temp_l[j][1];
+            if (index_l)
+            {
+                //更新坐标点
+                center_point_l[0] = temp_l[0][0];//x
+                center_point_l[1] = temp_l[0][1];//y
+                for (j = 0; j < index_l; j++)
+                {
+                    if (center_point_l[1] > temp_l[j][1])
+                    {
+                        center_point_l[0] = temp_l[j][0];//x
+                        center_point_l[1] = temp_l[j][1];//y
+                    }
                 }
             }
+
         }
-
-        // 右边判断
-        for (i = 0; i < 8; i++) {
-            if (image[search_filds_r[i][1]][search_filds_r[i][0]] == 0 &&
-                image[search_filds_r[(i + 1) & 7][1]][search_filds_r[(i + 1) & 7][0]] == 255) {
-                temp_r[index_r][0] = search_filds_r[i][0];
-                temp_r[index_r][1] = search_filds_r[i][1];
-                index_r++;
-                dir_r[r_data_statics] = i; // 记录方向
-            }
-        }
-
-        // 更新右边中心点
-        if (index_r) {
-            center_point_r[0] = temp_r[0][0];
-            center_point_r[1] = temp_r[0][1];
-            for (j = 1; j < index_r; j++) {
-                if (temp_r[j][1] < center_point_r[1]) {
-                    center_point_r[0] = temp_r[j][0];
-                    center_point_r[1] = temp_r[j][1];
-                }
-            }
-        }
-
-        l_data_statics++;
-        r_data_statics++;
-
-        // 跳出条件优化
-        if ((points_l[l_data_statics - 1][0] == points_r[r_data_statics - 1][0] &&
-             points_l[l_data_statics - 1][1] == points_r[r_data_statics - 1][1]) ||
-            (abs(center_point_l[0] - center_point_r[0]) < 2 &&
-             abs(center_point_l[1] - center_point_r[1]) < 2)) {
-            *hightest = (center_point_l[1] + center_point_r[1]) / 2;
+        if ((points_r[r_data_statics][0]== points_r[r_data_statics-1][0]&& points_r[r_data_statics][0] == points_r[r_data_statics - 2][0]
+            && points_r[r_data_statics][1] == points_r[r_data_statics - 1][1] && points_r[r_data_statics][1] == points_r[r_data_statics - 2][1])
+            ||(points_l[l_data_statics-1][0] == points_l[l_data_statics - 2][0] && points_l[l_data_statics-1][0] == points_l[l_data_statics - 3][0]
+                && points_l[l_data_statics-1][1] == points_l[l_data_statics - 2][1] && points_l[l_data_statics-1][1] == points_l[l_data_statics - 3][1]))
+        {
+            //printf("三次进入同一个点，退出\n");
             break;
         }
+        if (my_abs(points_r[r_data_statics][0] - points_l[l_data_statics - 1][0]) < 2
+            && my_abs(points_r[r_data_statics][1] - points_l[l_data_statics - 1][1] < 2)
+            )
+        {
+            //printf("\n左右相遇退出\n");
+            *hightest = (points_r[r_data_statics][1] + points_l[l_data_statics - 1][1]) >> 1;//取出最高点
+            //printf("\n在y=%d处退出\n",*hightest);
+            break;
+        }
+        if ((points_r[r_data_statics][1] < points_l[l_data_statics - 1][1]))
+        {
+            printf("\n如果左边比右边高了，左边等待右边\n");
+            continue;//如果左边比右边高了，左边等待右边
+        }
+        if (dir_l[l_data_statics - 1] == 7
+            && (points_r[r_data_statics][1] > points_l[l_data_statics - 1][1]))//左边比右边高且已经向下生长了
+        {
+            //printf("\n左边开始向下了，等待右边，等待中... \n");
+            center_point_l[0] = points_l[l_data_statics - 1][0];//x
+            center_point_l[1] = points_l[l_data_statics - 1][1];//y
+            l_data_statics--;
+        }
+        r_data_statics++;//索引加一
+
+        index_r = 0;//先清零，后使用
+        for (i = 0; i < 8; i++)
+        {
+            temp_r[i][0] = 0;//先清零，后使用
+            temp_r[i][1] = 0;//先清零，后使用
+        }
+
+        //右边判断
+        for (i = 0; i < 8; i++)
+        {
+            if (image[search_filds_r[i][1]][search_filds_r[i][0]] == 0
+                && image[search_filds_r[(i + 1) & 7][1]][search_filds_r[(i + 1) & 7][0]] == 255)
+            {
+                temp_r[index_r][0] = search_filds_r[(i)][0];
+                temp_r[index_r][1] = search_filds_r[(i)][1];
+                index_r++;//索引加一
+                dir_r[r_data_statics - 1] = (i);//记录生长方向
+                //printf("dir[%d]:%d\n", r_data_statics - 1, dir_r[r_data_statics - 1]);
+            }
+            if (index_r)
+            {
+
+                //更新坐标点
+                center_point_r[0] = temp_r[0][0];//x
+                center_point_r[1] = temp_r[0][1];//y
+                for (j = 0; j < index_r; j++)
+                {
+                    if (center_point_r[1] > temp_r[j][1])
+                    {
+                        center_point_r[0] = temp_r[j][0];//x
+                        center_point_r[1] = temp_r[j][1];//y
+                    }
+                }
+
+            }
+        }
+
+
     }
 
+
+    //取出循环次数
     *l_stastic = l_data_statics;
     *r_stastic = r_data_statics;
+
 }
 /*
 函数名称：void get_left(uint16 total_L)
@@ -496,7 +576,7 @@ void image_draw_rectan(uint8(*image)[image_w])
 
     }
 }
-extern int8_t offset = 0;
+
 /*
 函数名称：void image_process(void)
 功能说明：最终处理函数
@@ -521,9 +601,9 @@ data_stastics_l = 0;
 data_stastics_r = 0;
 if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
 {
-    //printf("正在开始八领域\n");
+    printf("正在开始八领域\n");
     search_l_r((uint16)USE_num, bin_image, &data_stastics_l, &data_stastics_r, start_point_l[0], start_point_l[1], start_point_r[0], start_point_r[1], &hightest);
-    //printf("八邻域已结束\n");
+    printf("八邻域已结束\n");
     // 从爬取的边界线内提取边线 ， 这个才是最终有用的边线
     get_left(data_stastics_l);
     get_right(data_stastics_r);
@@ -531,7 +611,7 @@ if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
 
 }
 //显示图像   改成你自己的就行 等后期足够自信了，显示关掉，显示屏挺占资源的
-tft180_displayimage03x((const uint8_t *)bin_image[0], image_w, image_h);
+tft180_displayimage03x((const uint8_t *)bin_image[0], MT9V03X_W, MT9V03X_H);
 ////根据最终循环次数画出边界点
 //for ( i = 0; i < data_stastics_l; i++)
 //{
@@ -544,7 +624,6 @@ tft180_displayimage03x((const uint8_t *)bin_image[0], image_w, image_h);
 
 for (i = hightest; i < image_h-1; i++)
 {
-
     center_line[i] = (l_border[i] + r_border[i]) >> 1;//求中线
     //求中线最好最后求，不管是补线还是做状态机，全程最好使用一组边线，中线最后求出，不能干扰最后的输出
     //当然也有多组边线的找法，但是个人感觉很繁琐，不建议
@@ -552,8 +631,6 @@ for (i = hightest; i < image_h-1; i++)
 //    draw_points(l_border[i], i, uesr_GREEN);//显示起点 显示左边线
 //    draw_points(r_border[i], i, uesr_GREEN);//显示起点 显示右边线
 }
-    offset = center_line[image_h / 2] - (image_w / 2);
-    //uart_write_byte(UART_INDEX, offset);
 }
 
 
