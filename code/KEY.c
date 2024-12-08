@@ -7,14 +7,15 @@ uint8_t debug = 0;
 
 void handle_key_1_short_press(void) {
     uart_write_string(UART_INDEX, "Start");
-
+    Car_State = 1; //发车
+    car_dir = 1;
 }
 
 
 void handle_key_2_short_press(void) {
      uart_write_string(UART_INDEX, "Test");
-     Car_State = 1; //发车
-     car_dir = 1;
+     car_dir = 0;
+     debug = 1;
 
 
 }

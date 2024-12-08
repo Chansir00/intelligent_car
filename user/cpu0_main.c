@@ -34,7 +34,6 @@
 ********************************************************************************************************************/
 #include "zf_common_headfile.h"
 #pragma section all "cpu0_dsram"
-extern uint8_t Car_State;
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
 
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
@@ -53,7 +52,6 @@ int core0_main(void)
     cpu_wait_event_ready();         // 等待所有核心初始化完毕                                        // 需要先横屏 不然显示不下
     while (TRUE)
     {
-        if(Car_State==1)
         // 此处编写需要循环执行的代码
         kernel();
         // 此处编写需要循环执行的代码
