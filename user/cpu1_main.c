@@ -35,6 +35,8 @@
 
 #include "zf_common_headfile.h"
 #pragma section all "cpu1_dsram"
+uint8_t beg;
+extern uint8_t Car_State;
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU1的RAM中
 
 
@@ -62,11 +64,12 @@ void core1_main(void)
 	while (TRUE)
 	{
         // 此处编写需要循环执行的代码
-
+	    beg = uart_read_byte(UART_INDEX);
+	    if(beg)
+	        Car_State=0;
         if(mt9v03x_finish_flag)
         {
 //            tft180_displayimage03x((const uint8 *)mt9v03x_image, MT9V03X_W, MT9V03X_H);   // 需要注意 直接显示 188*120 分辨率是显示不下的 会直接进入断言报错 所以这一句在默认分辨率下无法使用
-            image_process();
 
 //            tft180_show_gray_image(0, 0, (const uint8 *)mt9v03x_image, MT9V03X_W, MT9V03X_H, 160, 128, 0);
             mt9v03x_finish_flag = 0;

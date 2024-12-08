@@ -1095,7 +1095,7 @@
 			<resource resourceType="PROJECT" workspacePath="/Seekfree_TC264_Opensource_Library"/>
 		</configuration>
 		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/Seekfree_TC264_Opensource_Library"/>
+			<resource resourceType="PROJECT" workspacePath="/intel_car"/>
 		</configuration>
 		<configuration configurationName="Release">
 			<resource resourceType="PROJECT" workspacePath="/Seekfree_TC264_Opensource_Library"/>

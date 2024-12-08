@@ -1,8 +1,11 @@
 eclipse.preferences.version=1
 encoding//code/KEY.c=UTF-8
-encoding//code/camera1.h=UTF-8
+encoding//code/adc.c=UTF-8
+encoding//code/adc.h=UTF-8
 encoding//code/car.c=UTF-8
 encoding//code/encoder.c=UTF-8
+encoding//code/encoder.h=UTF-8
 encoding//code/motor.c=UTF-8
 encoding//code/uart.c=UTF-8
+encoding//user/cpu0_main.c=UTF-8
 encoding/<project>=GBK
