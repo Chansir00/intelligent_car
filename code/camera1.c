@@ -566,7 +566,7 @@ uint8_t Deal_img(void) {
 
 
 
-int calculate_offset1(void) {
+int calculate_offset(void) {
     int left_col = 0, right_col = 0;
     if (L_edge_count > 0) left_col = L_edge[L_edge_count / 2].col;
     if (R_edge_count > 0) right_col = R_edge[R_edge_count / 2].col;
