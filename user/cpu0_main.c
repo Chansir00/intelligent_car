@@ -1,119 +1,66 @@
 /*********************************************************************************************************************
-* TC264 Opensourec Library å³ï¼ˆTC264 å¼€æºåº“ï¼‰æ˜¯ä¸€ä¸ªåŸºäºŽå®˜æ–¹ SDK æŽ¥å£çš„ç¬¬ä¸‰æ–¹å¼€æºåº“
-* Copyright (c) 2022 SEEKFREE é€é£žç§‘æŠ€
+* TC264 Opensourec Library ¼´£¨TC264 ¿ªÔ´¿â£©ÊÇÒ»¸ö»ùÓÚ¹Ù·½ SDK ½Ó¿ÚµÄµÚÈý·½¿ªÔ´¿â
+* Copyright (c) 2022 SEEKFREE Öð·É¿Æ¼¼
 *
-* æœ¬æ–‡ä»¶æ˜¯ TC264 å¼€æºåº“çš„ä¸€éƒ¨åˆ†
+* ±¾ÎÄ¼þÊÇ TC264 ¿ªÔ´¿âµÄÒ»²¿·Ö
 *
-* TC264 å¼€æºåº“ æ˜¯å…è´¹è½¯ä»¶
-* æ‚¨å¯ä»¥æ ¹æ®è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‘å¸ƒçš„ GPLï¼ˆGNU General Public Licenseï¼Œå³ GNUé€šç”¨å…¬å…±è®¸å¯è¯ï¼‰çš„æ¡æ¬¾
-* å³ GPL çš„ç¬¬3ç‰ˆï¼ˆå³ GPL3.0ï¼‰æˆ–ï¼ˆæ‚¨é€‰æ‹©çš„ï¼‰ä»»ä½•åŽæ¥çš„ç‰ˆæœ¬ï¼Œé‡æ–°å‘å¸ƒå’Œ/æˆ–ä¿®æ”¹å®ƒ
+* TC264 ¿ªÔ´¿â ÊÇÃâ·ÑÈí¼þ
+* Äú¿ÉÒÔ¸ù¾Ý×ÔÓÉÈí¼þ»ù½ð»á·¢²¼µÄ GPL£¨GNU General Public License£¬¼´ GNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤£©µÄÌõ¿î
+* ¼´ GPL µÄµÚ3°æ£¨¼´ GPL3.0£©»ò£¨ÄúÑ¡ÔñµÄ£©ÈÎºÎºóÀ´µÄ°æ±¾£¬ÖØÐÂ·¢²¼ºÍ/»òÐÞ¸ÄËü
 *
-* æœ¬å¼€æºåº“çš„å‘å¸ƒæ˜¯å¸Œæœ›å®ƒèƒ½å‘æŒ¥ä½œç”¨ï¼Œä½†å¹¶æœªå¯¹å…¶ä½œä»»ä½•çš„ä¿è¯
-* ç”šè‡³æ²¡æœ‰éšå«çš„é€‚é”€æ€§æˆ–é€‚åˆç‰¹å®šç”¨é€”çš„ä¿è¯
-* æ›´å¤šç»†èŠ‚è¯·å‚è§ GPL
+* ±¾¿ªÔ´¿âµÄ·¢²¼ÊÇÏ£ÍûËüÄÜ·¢»Ó×÷ÓÃ£¬µ«²¢Î´¶ÔÆä×÷ÈÎºÎµÄ±£Ö¤
+* ÉõÖÁÃ»ÓÐÒþº¬µÄÊÊÏúÐÔ»òÊÊºÏÌØ¶¨ÓÃÍ¾µÄ±£Ö¤
+* ¸ü¶àÏ¸½ÚÇë²Î¼û GPL
 *
-* æ‚¨åº”è¯¥åœ¨æ”¶åˆ°æœ¬å¼€æºåº“çš„åŒæ—¶æ”¶åˆ°ä¸€ä»½ GPL çš„å‰¯æœ¬
-* å¦‚æžœæ²¡æœ‰ï¼Œè¯·å‚é˜…<https://www.gnu.org/licenses/>
+* ÄúÓ¦¸ÃÔÚÊÕµ½±¾¿ªÔ´¿âµÄÍ¬Ê±ÊÕµ½Ò»·Ý GPL µÄ¸±±¾
+* Èç¹ûÃ»ÓÐ£¬Çë²ÎÔÄ<https://www.gnu.org/licenses/>
 *
-* é¢å¤–æ³¨æ˜Žï¼š
-* æœ¬å¼€æºåº“ä½¿ç”¨ GPL3.0 å¼€æºè®¸å¯è¯åè®® ä»¥ä¸Šè®¸å¯ç”³æ˜Žä¸ºè¯‘æ–‡ç‰ˆæœ¬
-* è®¸å¯ç”³æ˜Žè‹±æ–‡ç‰ˆåœ¨ libraries/doc æ–‡ä»¶å¤¹ä¸‹çš„ GPL3_permission_statement.txt æ–‡ä»¶ä¸­
-* è®¸å¯è¯å‰¯æœ¬åœ¨ libraries æ–‡ä»¶å¤¹ä¸‹ å³è¯¥æ–‡ä»¶å¤¹ä¸‹çš„ LICENSE æ–‡ä»¶
-* æ¬¢è¿Žå„ä½ä½¿ç”¨å¹¶ä¼ æ’­æœ¬ç¨‹åº ä½†ä¿®æ”¹å†…å®¹æ—¶å¿…é¡»ä¿ç•™é€é£žç§‘æŠ€çš„ç‰ˆæƒå£°æ˜Žï¼ˆå³æœ¬å£°æ˜Žï¼‰
+* ¶îÍâ×¢Ã÷£º
+* ±¾¿ªÔ´¿âÊ¹ÓÃ GPL3.0 ¿ªÔ´Ðí¿ÉÖ¤Ð­Òé ÒÔÉÏÐí¿ÉÉêÃ÷ÎªÒëÎÄ°æ±¾
+* Ðí¿ÉÉêÃ÷Ó¢ÎÄ°æÔÚ libraries/doc ÎÄ¼þ¼ÐÏÂµÄ GPL3_permission_statement.txt ÎÄ¼þÖÐ
+* Ðí¿ÉÖ¤¸±±¾ÔÚ libraries ÎÄ¼þ¼ÐÏÂ ¼´¸ÃÎÄ¼þ¼ÐÏÂµÄ LICENSE ÎÄ¼þ
+* »¶Ó­¸÷Î»Ê¹ÓÃ²¢´«²¥±¾³ÌÐò µ«ÐÞ¸ÄÄÚÈÝÊ±±ØÐë±£ÁôÖð·É¿Æ¼¼µÄ°æÈ¨ÉùÃ÷£¨¼´±¾ÉùÃ÷£©
 *
-* æ–‡ä»¶åç§°          cpu0_main
-* å…¬å¸åç§°          æˆéƒ½é€é£žç§‘æŠ€æœ‰é™å…¬å¸
-* ç‰ˆæœ¬ä¿¡æ¯          æŸ¥çœ‹ libraries/doc æ–‡ä»¶å¤¹å†… version æ–‡ä»¶ ç‰ˆæœ¬è¯´æ˜Ž
-* å¼€å‘çŽ¯å¢ƒ          ADS v1.9.4
-* é€‚ç”¨å¹³å°          TC264D
-* åº—é“ºé“¾æŽ¥          https://seekfree.taobao.com/
+* ÎÄ¼þÃû³Æ          cpu0_main
+* ¹«Ë¾Ãû³Æ          ³É¶¼Öð·É¿Æ¼¼ÓÐÏÞ¹«Ë¾
+* °æ±¾ÐÅÏ¢          ²é¿´ libraries/doc ÎÄ¼þ¼ÐÄÚ version ÎÄ¼þ °æ±¾ËµÃ÷
+* ¿ª·¢»·¾³          ADS v1.9.4
+* ÊÊÓÃÆ½Ì¨          TC264D
+* µêÆÌÁ´½Ó          https://seekfree.taobao.com/
 *
-* ä¿®æ”¹è®°å½•
-* æ—¥æœŸ              ä½œè€…                å¤‡æ³¨
+* ÐÞ¸Ä¼ÇÂ¼
+* ÈÕÆÚ              ×÷Õß                ±¸×¢
 * 2022-09-15       pudding            first version
 ********************************************************************************************************************/
 #include "zf_common_headfile.h"
 #pragma section all "cpu0_dsram"
 extern uint8_t Car_State;
-extern uint16_t desired_speed_left;
-extern uint16_t desired_speed_right,motor_increment_left , motor_increment_right;
-// å°†æœ¬è¯­å¥ä¸Ž#pragma section all restoreè¯­å¥ä¹‹é—´çš„å…¨å±€å˜é‡éƒ½æ”¾åœ¨CPU0çš„RAMä¸­
+// ½«±¾Óï¾äÓë#pragma section all restoreÓï¾äÖ®¼äµÄÈ«¾Ö±äÁ¿¶¼·ÅÔÚCPU0µÄRAMÖÐ
 
-// æœ¬ä¾‹ç¨‹æ˜¯å¼€æºåº“ç©ºå·¥ç¨‹ å¯ç”¨ä½œç§»æ¤æˆ–è€…æµ‹è¯•å„ç±»å†…å¤–è®¾
-// æœ¬ä¾‹ç¨‹æ˜¯å¼€æºåº“ç©ºå·¥ç¨‹ å¯ç”¨ä½œç§»æ¤æˆ–è€…æµ‹è¯•å„ç±»å†…å¤–è®¾
-// æœ¬ä¾‹ç¨‹æ˜¯å¼€æºåº“ç©ºå·¥ç¨‹ å¯ç”¨ä½œç§»æ¤æˆ–è€…æµ‹è¯•å„ç±»å†…å¤–è®¾
+// ±¾Àý³ÌÊÇ¿ªÔ´¿â¿Õ¹¤³Ì ¿ÉÓÃ×÷ÒÆÖ²»òÕß²âÊÔ¸÷ÀàÄÚÍâÉè
+// ±¾Àý³ÌÊÇ¿ªÔ´¿â¿Õ¹¤³Ì ¿ÉÓÃ×÷ÒÆÖ²»òÕß²âÊÔ¸÷ÀàÄÚÍâÉè
+// ±¾Àý³ÌÊÇ¿ªÔ´¿â¿Õ¹¤³Ì ¿ÉÓÃ×÷ÒÆÖ²»òÕß²âÊÔ¸÷ÀàÄÚÍâÉè
 
-// **************************** ä»£ç åŒºåŸŸ ****************************
-
-
-uint8 channel_index = 0;
-adc_channel_enum channel_list[CHANNEL_NUMBER] =
-{
-     ADC_CHANNEL2,ADC_CHANNEL4
-    //ADC_CHANNEL5, ADC_CHANNEL6, ADC_CHANNEL7, ADC_CHANNEL8
-};
-uint16 adc_data[CHANNEL_NUMBER];  // å­˜å‚¨æ¯ä¸ªé€šé“çš„åŽŸå§‹å€¼
-uint16 adc_result[CHANNEL_NUMBER];  // å­˜å‚¨æ¯ä¸ªé€šé“çš„åŽŸå§‹å€¼
-float normalized_values[CHANNEL_NUMBER];
-int offsets[CHANNEL_NUMBER];        // å­˜å‚¨æ¯ä¸ªé€šé“çš„åç§»å€¼
-int total_offset = 0;              // åç§»å€¼çš„æ€»å’Œ
-int offset_list[10];
-int offset_adc = 0;
-int time=0;
-int temp =0;
-int offset_test = -250;
-extern int left_speed ;
-extern int right_speed ;
+// **************************** ´úÂëÇøÓò ****************************
 
 int core0_main(void)
 {
-    clock_init();                   // ï¿½ï¿½È¡Ê±ï¿½ï¿½Æµï¿½ï¿½<ï¿½ï¿½Ø±ï¿½ï¿½ï¿½>
-    debug_init();                   // ï¿½ï¿½Ê¼ï¿½ï¿½Ä¬ï¿½Ïµï¿½ï¿½Ô´ï¿½ï¿½ï¿½
-    // ï¿½Ë´ï¿½ï¿½ï¿½Ð´ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    clock_init();                   // »ñÈ¡Ê±ÖÓÆµÂÊ<Îñ±Ø±£Áô>
+    debug_init();                   // ³õÊ¼»¯Ä¬ÈÏµ÷ÊÔ´®¿Ú
+    // ´Ë´¦±àÐ´ÓÃ»§´úÂë ÀýÈçÍâÉè³õÊ¼»¯´úÂëµÈ
     Car_Init();
-    // ï¿½Ë´ï¿½ï¿½ï¿½Ð´ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-    cpu_wait_event_ready();         // ï¿½È´ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½Ä³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½                                        // ï¿½ï¿½Òªï¿½Èºï¿½ï¿½ï¿½ ï¿½ï¿½È»ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
-
+    // ´Ë´¦±àÐ´ÓÃ»§´úÂë ÀýÈçÍâÉè³õÊ¼»¯´úÂëµÈ
+    cpu_wait_event_ready();         // µÈ´ýËùÓÐºËÐÄ³õÊ¼»¯Íê±Ï                                        // ÐèÒªÏÈºáÆÁ ²»È»ÏÔÊ¾²»ÏÂ
     while (TRUE)
     {
-
-        time++;
-        // ï¿½Ë´ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ÒªÑ­ï¿½ï¿½Ö´ï¿½ÐµÄ´ï¿½ï¿½ï¿½
-        //time++;
-        if(time==20)
-        {
-            key_scanner();
-            // å¤„ç†æŒ‰é”®åŠ¨ä½œ
-            process_key_actions();
-            printf("%d,%d,%d,%d,%d\r\n",  desired_speed_left,  desired_speed_right ,left_speed,right_speed,total_offset);
-            time=0;
-        }
-        if (1)
-        {
-            total_offset = 0;  // é‡ç½®æ€»åç§»å€¼
-            for(channel_index = 0; channel_index < CHANNEL_NUMBER; channel_index ++)
-            {
-                adc_result[channel_index] = adc_mean_filter_convert(channel_list[channel_index], 10);
-                normalized_values[channel_index] = normalize(adc_result[channel_index], ADC_MAX);
-            }
-            float diff_ratio = calculate_differential_ratio(normalized_values[0], normalized_values[1]);
-            total_offset = diff_ratio *100;
-            total_offset+=20;
-        }
-
-
-
-//        printf(
-//            "ADC channel %d mean filter convert data is %d.\r\n",
-//            1,
-//            adc_result );      // å¾ªçŽ¯è¾“å‡º 10 æ¬¡å‡å€¼æ»¤æ³¢è½¬æ¢ç»“æžœ
-            //printf("offset:%d\r\n",offset_adc);
-            //time=0;
-
-        // ï¿½Ë´ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ÒªÑ­ï¿½ï¿½Ö´ï¿½ÐµÄ´ï¿½ï¿½ï¿½
+        if(Car_State==1)
+        // ´Ë´¦±àÐ´ÐèÒªÑ­»·Ö´ÐÐµÄ´úÂë
+        kernel();
+        // ´Ë´¦±àÐ´ÐèÒªÑ­»·Ö´ÐÐµÄ´úÂë
     }
 }
+
 #pragma section all restore
 
 
-// **************************** ä»£ç åŒºåŸŸ ****************************
+// **************************** ´úÂëÇøÓò ****************************

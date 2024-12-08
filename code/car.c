@@ -8,7 +8,6 @@ extern int8_t offset;
 extern car_direction car_dir = STOP;
 void Car_Init(void)
 {
-
     if(flag1 ==0)
         uart_write_byte (UART_INDEX, 0x01);
         flag1 = 1;
@@ -19,14 +18,12 @@ void Car_Init(void)
     mt9v03x_init();
     Uart_init();
     key_init(10);
-    adc_ini();
-
 
 
 }
 void kernel(void)
 {
-
+     adjust_motor_speed(offset);
 //    switch (car_dir)
 //    {
 //    case 0:

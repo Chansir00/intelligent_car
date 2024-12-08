@@ -548,9 +548,9 @@ for (i = hightest; i < image_h-1; i++)
     center_line[i] = (l_border[i] + r_border[i]) >> 1;//求中线
     //求中线最好最后求，不管是补线还是做状态机，全程最好使用一组边线，中线最后求出，不能干扰最后的输出
     //当然也有多组边线的找法，但是个人感觉很繁琐，不建议
-//    draw_points(center_line[i], i, uesr_GREEN);//显示起点 显示中线
-//    draw_points(l_border[i], i, uesr_GREEN);//显示起点 显示左边线
-//    draw_points(r_border[i], i, uesr_GREEN);//显示起点 显示右边线
+    draw_points(center_line[i], i, uesr_GREEN);//显示起点 显示中线
+    draw_points(l_border[i], i, uesr_GREEN);//显示起点 显示左边线
+    draw_points(r_border[i], i, uesr_GREEN);//显示起点 显示右边线
 }
     offset = center_line[image_h / 2] - (image_w / 2);
     //uart_write_byte(UART_INDEX, offset);

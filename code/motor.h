@@ -21,8 +21,9 @@ void Set_Left_Motor_Duty(int duty);
 
 void Set_Right_Motor_Duty(int duty);
 
-void adjust_motor_speed(int offset);
-float pid_steer(int offset);
-float pid_speed(int target_speed, int current_speed);
+void adjust_motor_speed(int8_t offset);
+float pid_steer(int8_t offset);
+float pid_speed(uint16_t target_speed, uint16_t current_speed);
+
 
 #endif

@@ -107,12 +107,14 @@
 #include "zf_device_wireless_uart.h"
 //===================================================外接设备驱动层===================================================
 #include "car.h"
+#include "camera1.h"
 #include "encoder.h"
 #include "motor.h"
 #include "uart.h"
 #include "key.h"
+#include "tft.h"
 #include "image.h"
-#include "adc.h"
+
 
 #endif
 
