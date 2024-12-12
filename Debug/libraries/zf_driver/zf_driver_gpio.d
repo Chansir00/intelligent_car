@@ -2,7 +2,10 @@ libraries/zf_driver/zf_driver_gpio.o :	../libraries/zf_driver/zf_driver_gpio.c
 ../libraries/zf_driver/zf_driver_gpio.c :
 libraries/zf_driver/zf_driver_gpio.o :	../libraries/zf_driver/zf_driver_gpio.h
 ../libraries/zf_driver/zf_driver_gpio.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_gpio.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IFXPORT.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IFXPORT.h :
 libraries/zf_driver/zf_driver_gpio.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPort_cfg.h
@@ -51,6 +54,7 @@ libraries/zf_driver/zf_driver_gpio.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/in
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
 libraries/zf_driver/zf_driver_gpio.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_driver/zf_driver_gpio.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IFXPORT.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IFXPORT.h :
@@ -101,6 +105,8 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/zf_driver/zf_driver_gpio.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_gpio.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 libraries/zf_driver/zf_driver_gpio.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
@@ -115,14 +121,20 @@ libraries/zf_driver/zf_driver_gpio.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/co
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
 libraries/zf_driver/zf_driver_gpio.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_gpio.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
 libraries/zf_driver/zf_driver_gpio.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
+<<<<<<< Updated upstream
 =======
 libraries/zf_driver/zf_driver_gpio.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
 libraries/zf_driver/zf_driver_gpio.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

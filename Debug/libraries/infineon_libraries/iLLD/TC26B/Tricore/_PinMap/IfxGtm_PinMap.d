@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	../lib
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_reg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_reg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_regdef.h
@@ -99,6 +102,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	d:/Use
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Std/IfxGtm_Cmu.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_bf.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_bf.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_reg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_reg.h :
@@ -197,3 +201,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/S
 libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_bf.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxGtm_bf.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

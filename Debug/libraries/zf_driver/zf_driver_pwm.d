@@ -1,6 +1,9 @@
 libraries/zf_driver/zf_driver_pwm.o :	../libraries/zf_driver/zf_driver_pwm.c
 ../libraries/zf_driver/zf_driver_pwm.c :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Atom/Pwm/IfxGtm_Atom_Pwm.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Atom/Pwm/IfxGtm_Atom_Pwm.h :
 libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxGtm_PinMap.h
@@ -143,6 +146,7 @@ libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/int
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_debug.h :
 libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_driver/zf_driver_pwm.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Atom/Pwm/IfxGtm_Atom_Pwm.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Atom/Pwm/IfxGtm_Atom_Pwm.h :
@@ -287,6 +291,8 @@ x:/TC264_source/camera_car/libraries/zf_common/zf_common_debug.h :
 libraries/zf_driver/zf_driver_pwm.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_pwm.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 libraries/zf_driver/zf_driver_pwm.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
@@ -301,13 +307,17 @@ libraries/zf_driver/zf_driver_pwm.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
 libraries/zf_driver/zf_driver_pwm.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
 libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
 libraries/zf_driver/zf_driver_pwm.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_interrupt.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_interrupt.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_driver/zf_driver_pwm.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
@@ -316,5 +326,7 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/zf_driver/zf_driver_pwm.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_interrupt.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_interrupt.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_driver/zf_driver_pwm.o :	../libraries/zf_driver/zf_driver_pwm.h
 ../libraries/zf_driver/zf_driver_pwm.h :

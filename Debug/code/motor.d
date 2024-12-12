@@ -1,6 +1,9 @@
 motor.o :	../code/motor.c
 ../code/motor.c :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 code/motor.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_headfile.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_headfile.h :
 code/motor.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
@@ -325,6 +328,7 @@ code/motor.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/image.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/image.h :
 code/motor.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/adc.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/adc.h :
+<<<<<<< Updated upstream
 =======
 motor.o :	"X:\\TC264_source\\camera_car\\libraries\\zf_common\zf_common_headfile.h"
 "X:\\TC264_source\\camera_car\\libraries\\zf_common\zf_common_headfile.h" :
@@ -653,3 +657,5 @@ motor.o :	"X:\\TC264_source\\camera_car\\code\tft.h"
 motor.o :	"X:\\TC264_source\\camera_car\\code\image.h"
 "X:\\TC264_source\\camera_car\\code\image.h" :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

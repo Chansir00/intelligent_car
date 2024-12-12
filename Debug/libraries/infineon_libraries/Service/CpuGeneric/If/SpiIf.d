@@ -2,7 +2,10 @@ libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	../libraries/infine
 ../libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.c :
 libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	../libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.h
 ../libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Src/Std/IfxSrc.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Src/Std/IfxSrc.h :
 libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSrc_cfg.h
@@ -31,6 +34,7 @@ libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	d:/Users/64271/AURI
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h :
 libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx_TypesReg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx_TypesReg.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Src/Std/IfxSrc.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Src/Std/IfxSrc.h :
@@ -61,3 +65,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx
 libraries/infineon_libraries/Service/CpuGeneric/If/SpiIf.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx_TypesReg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx_TypesReg.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

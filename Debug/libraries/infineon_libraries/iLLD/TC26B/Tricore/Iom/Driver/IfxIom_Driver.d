@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	../
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Std/IfxIom.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Std/IfxIom.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxIom_cfg.h
@@ -55,6 +58,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	d:/
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxIom_bf.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Std/IfxIom.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Std/IfxIom.h :
@@ -109,3 +113,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Iom/Driver/IfxIom_Driver.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

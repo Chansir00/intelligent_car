@@ -25,5 +25,9 @@ void Encoder_init(void)
     encoder_quad_init(ENCODER_QUADDEC1, ENCODER_QUADDEC_A1, ENCODER_QUADDEC_B1);
     encoder_quad_init(ENCODER_QUADDEC2, ENCODER_QUADDEC_A2, ENCODER_QUADDEC_B2);
     pit_ms_init(PIT0, 10);                                                     // 鍒濆鍖� PIT0 涓哄懆鏈熶腑鏂� 100ms 鍛�
+<<<<<<< Updated upstream
     pit_ms_init(PIT1, 20);
+=======
+    pit_ms_init(PIT1, 50);
+>>>>>>> Stashed changes
 }

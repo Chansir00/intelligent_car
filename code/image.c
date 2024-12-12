@@ -225,7 +225,10 @@ uint8 get_start_point(uint8 start_row)
     }
 }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 #define USE_num 120  //定义找点的数组成员个数按理说300个点能放下，但是有些特殊情况确实难顶，多定义了一点
 #define WHITE 255
 #define BLACK 0
@@ -455,8 +458,13 @@ example： get_left(data_stastics_l );
 uint8 l_border[image_h];//左线数组
 uint8 r_border[image_h];//右线数组
 uint8 center_line[image_h];//中线数组
+<<<<<<< Updated upstream
 uint8 left_lose;
 uint8 right_lose;
+=======
+uint8 left_lose=0;
+uint8 right_lose=0;
+>>>>>>> Stashed changes
 void get_left(uint16 total_L)
 {
     uint8 i = 0;
@@ -502,6 +510,7 @@ void get_right(uint16 total_R)
     uint8 i = 0;
     uint16 j = 0;
     uint8 h = 0;
+    right_lose=0;
     for (i = 0; i < image_h; i++)
     {
         r_border[i] = border_max;//右边线初始化放到最右边，左边线放到最左边，这样八邻域闭合区域外的中线就会在中间，不会干扰得到的数据
@@ -513,7 +522,11 @@ void get_right(uint16 total_R)
         if (points_r[j][1] == h)
         {
             r_border[h] = points_r[j][0] - 1;
+<<<<<<< Updated upstream
             if(r_border[h]>=155)
+=======
+            if(r_border[h]>=156)
+>>>>>>> Stashed changes
                 right_lose+=1;
         }
         else continue;//每行只取一个点，没到下一行就不记录
@@ -523,7 +536,7 @@ void get_right(uint16 total_R)
 }
 
 //定义膨胀和腐蚀的阈值区间
-#define threshold_max   255*5//此参数可根据自己的需求调节
+#define threshold_max   255*6//此参数可根据自己的需求调节
 #define threshold_min   255*2//此参数可根据自己的需求调节
 void image_filter(uint8(*bin_image)[image_w])//形态学滤波，简单来说就是膨胀和腐蚀的思想
 {
@@ -589,7 +602,10 @@ void image_draw_rectan(uint8(*image)[image_w])
 
     }
 }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 int8_t offset = 0;
 /*---------------------------------------------------------------
  【函    数】get_turning_point
@@ -598,6 +614,7 @@ int8_t offset = 0;
  【返 回 值】
  【注意事项】
  ----------------------------------------------------------------*/
+<<<<<<< Updated upstream
 int16 L_corner_flag = 0;//左拐点存在标志
 int16 L_corner_row = 0;//左拐点所在行
 int16 L_corner_col = 0;//左拐点所在列
@@ -666,6 +683,103 @@ void get_turning_point(void)
         }
     }
 }
+=======
+extern uint8_t Car_State;
+int16 L_corner_flag = 0;//左拐点存在标志
+//int16 L_corner_row = 0;//左拐点所在行
+//int16 L_corner_col = 0;//左拐点所在列
+//int L_corner_angle = 0;//左拐点角度
+int16 R_corner_flag = 0;//右拐点存在标志
+//int16 R_corner_row = 0;//右拐点所在行
+//int16 R_corner_col = 0;//右拐点所在列
+//int R_corner_angle = 0;//右拐点角度
+uint8 enable_L_corner=1,enable_R_corner=1;
+const uint8_t TURN_THRESHOLD = 10;
+const uint8_t EXIT_THRESHOLD = 2;
+uint8_t exit_num=0;
+bool in_roundabout=false;;
+void detect_turning_points() {
+    R_corner_flag = 0;
+    L_corner_flag = 0;
+    exit_num=0;
+
+
+    for (uint8_t i = 50; i < 100; i++) {
+        // 跳过不符合条件的点
+        if (l_border[i] <= 3 || r_border[i] >= 155) {
+            continue;
+        }
+
+        if (1) {
+            // 判断左线是否为进入环岛的拐点
+            if (abs(l_border[i] - l_border[i - 1]) >= TURN_THRESHOLD ||
+                abs(l_border[i + 1] - l_border[i]) >= TURN_THRESHOLD) {
+                L_corner_flag += 1;
+//                if(L_corner_flag>3)
+//                    in_roundabout = true;  // 标记进入环岛
+//                printf("Entering roundabout: Left corner detected at row %d\n", i);
+            }
+            // 判断右线是否为进入环岛的拐点
+            if (abs(r_border[i] - r_border[i - 1]) >= TURN_THRESHOLD ||
+                abs(r_border[i + 1] - r_border[i]) >= TURN_THRESHOLD) {
+                R_corner_flag += 1;
+//                if(R_corner_flag>3)
+//                    in_roundabout = true;  // 标记进入环岛
+//                printf("Entering roundabout: Right corner detected at row %d\n", i);
+            }
+        }
+//            else {
+//            // 在环岛内，检测是否满足退出条件
+//                if (abs(l_border[i] - l_border[i - 1]) > TURN_THRESHOLD ||
+//                                abs(l_border[i + 1] - l_border[i]) > TURN_THRESHOLD) {
+//                    in_roundabout = false;  // 标记退出环岛
+//                    R_corner_flag=0;
+//                    printf("Exiting roundabout at row %d\n", i);
+//                }
+//                else if(abs(r_border[i] - r_border[i - 1]) >= TURN_THRESHOLD ||
+//                        abs(r_border[i + 1] - r_border[i]) >= TURN_THRESHOLD)
+//                {
+//                    in_roundabout = false;  // 标记退出环岛
+//                    L_corner_flag=0;
+//                    printf("Exiting roundabout at row %d\n", i);
+//                }
+//            if (abs(l_border[i] - l_border[i - 1]) <= EXIT_THRESHOLD &&
+//                abs(r_border[i] - r_border[i - 1]) <= EXIT_THRESHOLD) {
+//                exit_num+=1;
+//                if(exit_num>10)
+//                {
+//                    in_roundabout = false;  // 标记退出环岛
+//                    printf("Exiting roundabout at row %d\n", i);
+//                    Car_State=1;
+//                }
+//                else
+//                    Car_State=2;
+//
+//            }
+
+    }
+}
+uint8_t point1,point2,point3;
+int8_t diff1,diff2;
+void get_turning_point(void)
+{
+    R_corner_flag=0;
+    L_corner_flag=0;
+    point1 = center_line[40];
+    point2 = center_line[70];
+    point3 = center_line[100];
+    diff1=point2-point1;
+    diff2 = point3-point2;
+    if(diff1<0&&diff2>0&&enable_R_corner==1)
+        R_corner_flag=1;
+    else if(diff1>0&&diff2<0&&enable_L_corner==1)
+        L_corner_flag=1;
+
+
+}
+
+
+>>>>>>> Stashed changes
 
 void draw_points(uint16_t x, uint16_t y, uint16_t color)
 {
@@ -700,9 +814,12 @@ void draw_points(uint16_t x, uint16_t y, uint16_t color)
     // 绘制中心点
     tft180_draw_point(x, y, color);
 }
+<<<<<<< Updated upstream
 =======
 
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 /*
 函数名称：void image_process(void)
 功能说明：最终处理函数
@@ -733,7 +850,11 @@ if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
     // 从爬取的边界线内提取边线 ， 这个才是最终有用的边线
     get_left(data_stastics_l);
     get_right(data_stastics_r);
+<<<<<<< Updated upstream
     get_turning_point();
+=======
+    detect_turning_points();
+>>>>>>> Stashed changes
     //处理函数放这里，不要放到if外面去了，不要放到if外面去了，不要放到if外面去了，重要的事说三遍
 
 }
@@ -758,8 +879,12 @@ for (i = hightest; i < image_h-1; i++)
 //    draw_points(l_border[i], i, uesr_GREEN);//显示起点 显示左边线
 //    draw_points(r_border[i], i, uesr_GREEN);//显示起点 显示右边线
 }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     offset = center_line[image_h / 3] - (image_w / 2);
+=======
+    offset = center_line[100] - (image_w / 2);
+>>>>>>> Stashed changes
     //uart_write_byte(UART_INDEX, offset);
 =======
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d

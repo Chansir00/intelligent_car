@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_PwmHl.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_PwmHl.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf.h
@@ -131,6 +134,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_Timer.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_PwmHl.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_PwmHl.h :
@@ -261,5 +265,7 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :

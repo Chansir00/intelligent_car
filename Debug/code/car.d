@@ -1,5 +1,6 @@
 code/car.o :	../code/car.c
 ../code/car.c :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 code/car.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_headfile.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_headfile.h :
@@ -7,6 +8,10 @@ d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_h
 code/car.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_headfile.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_headfile.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+code/car.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_headfile.h
+d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_headfile.h :
+>>>>>>> Stashed changes
 code/car.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 code/car.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
@@ -21,7 +26,10 @@ code/car.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdbool.h :
 code/car.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 code/car.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/ifxAsclin_reg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/ifxAsclin_reg.h :
 code/car.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxAsclin_regdef.h
@@ -330,6 +338,7 @@ code/car.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/image.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/image.h :
 code/car.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/adc.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/code/adc.h :
+<<<<<<< Updated upstream
 =======
 code/car.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/ifxAsclin_reg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/ifxAsclin_reg.h :
@@ -642,3 +651,5 @@ x:/TC264_source/camera_car/code/tft.h :
 code/car.o :	x:/TC264_source/camera_car/code/image.h
 x:/TC264_source/camera_car/code/image.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

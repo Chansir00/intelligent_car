@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	../librari
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxScu_cfg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxScu_cfg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Configurations/Ifx_Cfg.h
@@ -85,6 +88,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	d:/Users/6
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxScu_cfg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxScu_cfg.h :
@@ -169,3 +173,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/S
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

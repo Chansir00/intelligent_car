@@ -2,7 +2,10 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	../libra
 ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.h
 ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_Intrinsics.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_Intrinsics.h :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
@@ -21,6 +24,7 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	d:/Users
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_IntrinsicsTasking.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_IntrinsicsTasking.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_Intrinsics.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_Intrinsics.h :
@@ -41,6 +45,8 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_IntrinsicsTasking.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_IntrinsicsTasking.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h

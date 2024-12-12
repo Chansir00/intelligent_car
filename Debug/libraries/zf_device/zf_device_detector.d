@@ -1,6 +1,9 @@
 libraries/zf_device/zf_device_detector.o :	../libraries/zf_device/zf_device_detector.c
 ../libraries/zf_device/zf_device_detector.c :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_driver/zf_driver_uart.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_driver/zf_driver_uart.h :
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Asclin/Asc/ifxAsclin_Asc.h
@@ -137,6 +140,7 @@ libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf.h :
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_detector.o :	x:/TC264_source/camera_car/libraries/zf_driver/zf_driver_uart.h
 x:/TC264_source/camera_car/libraries/zf_driver/zf_driver_uart.h :
@@ -275,6 +279,8 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf
 libraries/zf_device/zf_device_detector.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_detector.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 libraries/zf_device/zf_device_detector.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
@@ -289,13 +295,17 @@ libraries/zf_device/zf_device_detector.o :	d:/Infineon/AURIX-Studio-1.9.4/plugin
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
 libraries/zf_device/zf_device_detector.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_fifo.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_fifo.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_detector.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
@@ -304,6 +314,8 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/zf_device/zf_device_detector.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_fifo.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_fifo.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_detector.o :	../libraries/zf_device/zf_device_wireless_uart.h
 ../libraries/zf_device/zf_device_wireless_uart.h :
 libraries/zf_device/zf_device_detector.o :	../libraries/zf_device/zf_device_bluetooth_ch9141.h
@@ -314,14 +326,20 @@ libraries/zf_device/zf_device_detector.o :	../libraries/zf_device/zf_device_wifi
 ../libraries/zf_device/zf_device_wifi_spi.h :
 libraries/zf_device/zf_device_detector.o :	../libraries/zf_device/zf_device_detector.h
 ../libraries/zf_device/zf_device_detector.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_debug.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_debug.h :
 libraries/zf_device/zf_device_detector.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_interrupt.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_interrupt.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_detector.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_debug.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_debug.h :
 libraries/zf_device/zf_device_detector.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_interrupt.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_interrupt.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

@@ -33,7 +33,9 @@
 * 2022-09-15       pudding            first version
 ********************************************************************************************************************/
 #include "zf_common_headfile.h"
+const int TURN_TIME = 2000;
 #pragma section all "cpu0_dsram"
+<<<<<<< Updated upstream
 extern uint8_t Car_State;
 extern uint16_t desired_speed_left;
 extern uint16_t desired_speed_right,motor_increment_left , motor_increment_right;
@@ -63,10 +65,31 @@ int offset_list[10];
 int offset_adc = 0;
 uint8_t time=0;
 uint8_t time1=100;
+=======
+uint8_t Car_State =0;;
+uint8_t Run=0;
+extern uint16_t desired_speed_left;
+extern uint16_t desired_speed_right,motor_increment_left , motor_increment_right;
+extern int8_t offset;
+
+// 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
+
+// 本例程是开源库空工程 可用作移植或者测试各类内外设
+// 本例程是开源库空工程 可用作移植或者测试各类内外设
+// 本例程是开源库空工程 可用作移植或者测试各类内外设
+
+// **************************** 代码区域 ****************************
+int total_offset = 0;              // 偏移值的总和
+int offset_list[10];
+int offset_adc = 0;
+int  time0;
+int time1;
+>>>>>>> Stashed changes
 int temp =0;
 int offset_test = -250;
 extern int left_speed ;
 extern int right_speed ;
+<<<<<<< Updated upstream
 int orin = 0;
 
 =======
@@ -96,6 +119,11 @@ int orin = 0;
 int flag8 = 0;
 int flag9=0;
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+extern int base_speed;
+int orin = 0;
+int flag =0;
+>>>>>>> Stashed changes
 
 int core0_main(void)
 {
@@ -109,14 +137,22 @@ int core0_main(void)
     while (TRUE)
     {
 
+<<<<<<< Updated upstream
         time++;
         // �˴���д��Ҫѭ��ִ�еĴ���
         //time++;
         if(time==20)
+=======
+        time0++;
+        // �˴���д��Ҫѭ��ִ�еĴ���
+        //time++;
+        if(time0==20)
+>>>>>>> Stashed changes
         {
             key_scanner();
             // 处理按键动作
             process_key_actions();
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             printf("%d,%d,%d,%d,%d\r\n",  desired_speed_left,  desired_speed_right ,left_speed,right_speed,offset);
             if(Car_State==1)
@@ -160,6 +196,42 @@ int core0_main(void)
 
 
 
+=======
+            Car_tradege();
+            //printf("%d\r\n",Car_State);
+            printf("%d,%d,%d,%d,%d,%d\r\n",  offset, desired_speed_left, desired_speed_right ,left_speed,right_speed,Car_State);
+            //printf("%d,%d,%d,%d,%d\r\n",left_lose,right_lose,Car_State,left_speed,right_speed);
+            time0=0;
+        }
+
+        switch(Car_State)
+        {
+            case 0:
+                Car_stop();
+                break;
+            case 1:
+                base_speed=10;
+                adjust_motor_speed(offset);
+                break;
+            case 2: //右环
+                adjust_motor_speed(25);
+                system_delay_ms(1500);
+                Car_State=1;
+                break;
+            case 3:
+                adjust_motor_speed(-25);
+                system_delay_ms(1500);
+                Car_State=1;
+                break;
+            case 4:
+                base_speed=15;
+                adjust_motor_speed(0);
+                break;
+            case 5:
+                adjust_motor_speed(0);
+                break;
+        }
+>>>>>>> Stashed changes
 //        printf(
 //            "ADC channel %d mean filter convert data is %d.\r\n",
 //            1,
@@ -168,6 +240,10 @@ int core0_main(void)
             //time=0;
 
         // �˴���д��Ҫѭ��ִ�еĴ���
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     }
 }
 #pragma section all restore

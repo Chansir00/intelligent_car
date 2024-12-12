@@ -2,6 +2,7 @@ libraries/zf_device/zf_device_virtual_oscilloscope.o :	../libraries/zf_device/zf
 ../libraries/zf_device/zf_device_virtual_oscilloscope.c :
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	../libraries/zf_device/zf_device_virtual_oscilloscope.h
 ../libraries/zf_device/zf_device_virtual_oscilloscope.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h :
@@ -9,6 +10,10 @@ d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_t
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h
+d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h :
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
@@ -23,7 +28,10 @@ libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Infineon/AURIX-Studio-
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h
@@ -40,6 +48,7 @@ libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Users/64271/AURIX-v1.9
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h :
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
@@ -58,3 +67,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/zf_device/zf_device_virtual_oscilloscope.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

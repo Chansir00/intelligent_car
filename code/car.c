@@ -3,9 +3,15 @@
 uint8_t flag1=0;
 uint8_t flag2=0;
 uint8_t flag3=0;
-
+extern uint8_t Car_State;
+extern uint8_t Run;
+extern int16 L_corner_flag;
+extern int16 R_corner_flag;
+extern uint8 left_lose,right_lose;
 extern int8_t offset;
 extern car_direction car_dir = STOP;
+extern int flag;
+extern bool in_roundabout;
 void Car_Init(void)
 {
 
@@ -24,8 +30,11 @@ void Car_Init(void)
 
 
 }
-void kernel(void)
+
+
+void Car_tradege(void)
 {
+<<<<<<< Updated upstream
 
 //    switch (car_dir)
 //    {
@@ -50,51 +59,41 @@ void kernel(void)
 //    default:
 //        break;
 //    }
+=======
+    if(Run==1)
+    {
+        if(R_corner_flag>=1&&left_lose<=40)  //判断为右环
+        {
+            Car_State=1;
+        }
+        else if(left_lose>=70 && right_lose>=70)
+            Car_State=4;
+        else if(R_corner_flag&&L_corner_flag)
+            Car_State=4;
+        else if(left_lose<30&&right_lose<30)
+            Car_State=4;
+        else
+            Car_State=1;
+    }
+    else
+        Car_State=0;
+
+>>>>>>> Stashed changes
 }
 
-void Car_streight(void)
+void right_circle()
 {
-    if(flag3 ==0)
-        uart_write_byte (UART_INDEX, 0x03);
-        flag3 = 1;
-    adjust_motor_speed(offset);
-//    Set_Left_Motor_Duty(9000);
-//    Set_Right_Motor_Duty(9000);
+        Set_Left_Motor_Duty(9000);
+        Set_Right_Motor_Duty(5000);
 }
-
-void Car_left(void)
-{
-    Set_Left_Motor_Duty(6000);
-    Set_Right_Motor_Duty(9000);
-}
-
-void Car_right(void)
-{
-    Set_Left_Motor_Duty(9000);
-    Set_Right_Motor_Duty(6000);
-}
-
-
-void Car_left_circle(void)
-{
-    Set_Left_Motor_Duty(6000);
-    Set_Right_Motor_Duty(9000);
-}
-
-
-void Car_right_circle(void)
-{
-    Set_Left_Motor_Duty(9000);
-    Set_Right_Motor_Duty(6000);
-}
-
 
 void Car_stop(void)
 {
-    if(flag1 ==0)
-        uart_write_byte (UART_INDEX, 0x01);
-        flag1 = 1;
+
     Set_Left_Motor_Duty(0);
     Set_Right_Motor_Duty(0);
 }
+
+
+
 

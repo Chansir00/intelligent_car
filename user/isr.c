@@ -39,7 +39,13 @@ extern int8_t offset;
 extern uint8_t Car_State;
 extern int total_offset;
 extern int offset_test;
+<<<<<<< Updated upstream
 int flag =0;
+=======
+extern int16 L_corner_flag;
+extern int16 R_corner_flag;
+
+>>>>>>> Stashed changes
 int speed =0;
 int left_speed = 0;
 int right_speed =0;
@@ -54,10 +60,14 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
     pit_clear_flag(CCU60_CH0);
     left_speed = 0.7*Get_Left_Motor_Speed()+0.3*left_speed;
     right_speed = 0.7*Get_Right_Motor_Speed()+0.3*right_speed;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+
+>>>>>>> Stashed changes
 //    else if(Car_State==0)
 //    {
 //        Set_Left_Motor_Duty(0);
@@ -72,6 +82,20 @@ IFX_INTERRUPT(cc60_pit_ch1_isr, 0, CCU6_0_CH1_ISR_PRIORITY)
 {
     interrupt_global_enable(0);  // ¿ªÆôÖÐ¶ÏÇ¶Ì×
     pit_clear_flag(CCU60_CH1);
+//    if(Car_State==2)
+//    {
+//        for(flag=40;flag>0;flag--)
+//        {
+//        }
+//        Car_State=1;
+//    }
+//    if(Car_State==3)
+//    {
+//        for(flag=40;flag>0;flag--)
+//        {
+//        }
+//        Car_State=1;
+//    }
 
 }
 

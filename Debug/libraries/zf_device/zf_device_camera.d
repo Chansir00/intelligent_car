@@ -1,16 +1,22 @@
 libraries/zf_device/zf_device_camera.o :	../libraries/zf_device/zf_device_camera.c
 ../libraries/zf_device/zf_device_camera.c :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_debug.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_debug.h :
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_typedef.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_camera.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_debug.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_debug.h :
 libraries/zf_device/zf_device_camera.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_typedef.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_camera.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
 libraries/zf_device/zf_device_camera.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
@@ -25,7 +31,10 @@ libraries/zf_device/zf_device_camera.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
 libraries/zf_device/zf_device_camera.o :	d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
 d:/Infineon/AURIX-Studio-1.9.4/plugins/com.infineon.aurix.tools_1.9.4/build_system/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h
@@ -144,6 +153,7 @@ libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu.h :
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_driver/zf_driver_exti.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_driver/zf_driver_exti.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_camera.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
@@ -264,6 +274,8 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/zf_device/zf_device_camera.o :	x:/TC264_source/camera_car/libraries/zf_driver/zf_driver_exti.h
 x:/TC264_source/camera_car/libraries/zf_driver/zf_driver_exti.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_camera.o :	../libraries/zf_device/zf_device_mt9v03x.h
 ../libraries/zf_device/zf_device_mt9v03x.h :
 libraries/zf_device/zf_device_camera.o :	../libraries/zf_device/zf_device_type.h
@@ -274,7 +286,10 @@ libraries/zf_device/zf_device_camera.o :	../libraries/zf_device/zf_device_scc866
 ../libraries/zf_device/zf_device_scc8660.h :
 libraries/zf_device/zf_device_camera.o :	../libraries/zf_device/zf_device_camera.h
 ../libraries/zf_device/zf_device_camera.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_fifo.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_common/zf_common_fifo.h :
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/zf_driver/zf_driver_uart.h
@@ -317,6 +332,7 @@ libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf.h :
 libraries/zf_device/zf_device_camera.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
+<<<<<<< Updated upstream
 =======
 libraries/zf_device/zf_device_camera.o :	x:/TC264_source/camera_car/libraries/zf_common/zf_common_fifo.h
 x:/TC264_source/camera_car/libraries/zf_common/zf_common_fifo.h :
@@ -361,3 +377,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf
 libraries/zf_device/zf_device_camera.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

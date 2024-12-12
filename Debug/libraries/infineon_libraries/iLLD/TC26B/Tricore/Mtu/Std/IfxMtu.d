@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	../libraries/
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxMtu_cfg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxMtu_cfg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu.h
@@ -101,6 +104,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	d:/Users/6427
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxMtu_cfg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxMtu_cfg.h :
@@ -201,3 +205,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/S
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Mtu/Std/IfxMtu.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	../librarie
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPsi5_cfg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPsi5_cfg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxPsi5_PinMap.h
@@ -67,6 +70,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	d:/Users/64
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_reg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPsi5_cfg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPsi5_cfg.h :
@@ -133,3 +137,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Psi5/Std/IfxPsi5.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

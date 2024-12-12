@@ -2,7 +2,10 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	
 ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.c :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.h
 ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h
@@ -17,6 +20,7 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Platform_Types.h :
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
@@ -33,3 +37,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/S
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

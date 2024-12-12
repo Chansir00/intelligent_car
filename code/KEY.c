@@ -1,13 +1,21 @@
 #include "zf_common_headfile.h"
+<<<<<<< Updated upstream
 extern uint8_t Car_State = 0;          // 杞︾姸鎬�,0:鍋滆溅,1:姝ｅ父
 extern int offset_test;
 
+=======
+extern uint8_t Run;          // 杞︾姸鎬�,0:鍋滆溅,1:姝ｅ父
+extern int offset_test;
+extern int base_speed;
+extern float kp_steer;
+>>>>>>> Stashed changes
 uint8_t debug = 0;
 // 示例的按键处理函数
 
 
 void handle_key_1_short_press(void) {
     uart_write_string(UART_INDEX, "Start");
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
     offset_test+=20;
@@ -15,24 +23,37 @@ void handle_key_1_short_press(void) {
         Car_State=0;
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
     Car_State=1;
+=======
+    Run=1;
+>>>>>>> Stashed changes
 
 }
 
 
 void handle_key_2_short_press(void) {
      uart_write_string(UART_INDEX, "Test");
+<<<<<<< Updated upstream
 <<<<<<< HEAD
      Car_State = 0; //发车
 =======
      Car_State = 1; //发车
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+     base_speed=6;
+     kp_steer = 0.1;   //line=100
+>>>>>>> Stashed changes
 
 
 }
 
 void handle_key_3_short_press(void) {
      uart_write_string(UART_INDEX, "stop");
+<<<<<<< Updated upstream
      offset_test-=20;
+=======
+     base_speed=10;
+     kp_steer = 0.08;
+>>>>>>> Stashed changes
 }
 
 

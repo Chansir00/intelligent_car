@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	../li
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_Pos.h
@@ -183,6 +186,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	d:/Us
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxGtm_cfg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Std/IfxGtm_Tim.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Std/IfxGtm_Tim.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.h :
@@ -365,3 +369,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dsadc/Rdc/IfxDsadc_Rdc.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Std/IfxGtm_Tim.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Gtm/Std/IfxGtm_Tim.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes

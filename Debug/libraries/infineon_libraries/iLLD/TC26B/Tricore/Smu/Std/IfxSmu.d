@@ -2,7 +2,10 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	../libraries/
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.c :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.h
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.h :
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSmu_cfg.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSmu_cfg.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
@@ -65,6 +68,7 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	d:/Users/6427
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h
 d:/Users/64271/AURIX-v1.9.4-workspace2/intel_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h :
+<<<<<<< Updated upstream
 =======
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSmu_cfg.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSmu_cfg.h :
@@ -129,3 +133,5 @@ x:/TC264_source/camera_car/libraries/infineon_libraries/Service/CpuGeneric/_Util
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Smu/Std/IfxSmu.o :	x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h
 x:/TC264_source/camera_car/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h :
 >>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
+=======
+>>>>>>> Stashed changes
