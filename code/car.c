@@ -34,32 +34,6 @@ void Car_Init(void)
 
 void Car_tradege(void)
 {
-<<<<<<< Updated upstream
-
-//    switch (car_dir)
-//    {
-//    case 0:
-//        Car_stop();
-//        break;
-//    case 1:
-//        Car_streight();
-//        break;
-//    case 2:
-//        Car_left();
-//        break;
-//    case 3:
-//        Car_right();
-//        break;
-//    case 4:
-//        Car_left_circle();
-//        break;
-//    case 5:
-//        Car_right_circle();
-//        break;
-//    default:
-//        break;
-//    }
-=======
     if(Run==1)
     {
         if(R_corner_flag>=1&&left_lose<=40)  //判断为右环
@@ -78,7 +52,6 @@ void Car_tradege(void)
     else
         Car_State=0;
 
->>>>>>> Stashed changes
 }
 
 void right_circle()

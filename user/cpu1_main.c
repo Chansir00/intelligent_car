@@ -63,28 +63,11 @@ void core1_main(void)
     cpu_wait_event_ready();                 // 等待所有核心初始化完毕
 	while (TRUE)
 	{
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 
         if(mt9v03x_finish_flag)
         {
 //            tft180_displayimage03x((const uint8 *)mt9v03x_image, MT9V03X_W, MT9V03X_H);   // 需要注意 直接显示 188*120 分辨率是显示不下的 会直接进入断言报错 所以这一句在默认分辨率下无法使用
             image_process();
-<<<<<<< Updated upstream
-=======
-        // 此处编写需要循环执行的代码
-	    beg = uart_read_byte(UART_INDEX);
-	    if(beg)
-	        Car_State=0;
-        if(mt9v03x_finish_flag)
-        {
-//            tft180_displayimage03x((const uint8 *)mt9v03x_image, MT9V03X_W, MT9V03X_H);   // 需要注意 直接显示 188*120 分辨率是显示不下的 会直接进入断言报错 所以这一句在默认分辨率下无法使用
-
->>>>>>> ccc3f4231577228addca1a3d483ab8c7f985445d
-=======
->>>>>>> Stashed changes
 //            tft180_show_gray_image(0, 0, (const uint8 *)mt9v03x_image, MT9V03X_W, MT9V03X_H, 160, 128, 0);
             mt9v03x_finish_flag = 0;
         }
